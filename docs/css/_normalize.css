@@ -56,8 +56,52 @@
 }
 /* Document
    ========================================================================== */
-/* Document
-   ========================================================================== */
+ :root {
+  --dark-primary: #2A254B;
+ --primary: #4d4e93;
+ --light-grey: rgba(249, 249, 249, 1);
+ --border-grey: #ebe8f4;
+ --border-dark: #cac6da;
+ --white: #fff;
+ --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ --gap: 20px;
+ --line-height: 1.5;
+ --font-weight: 400;
+ --container-width: 1280px;
+ --container-offset: 15px;
+ --main-trs: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+--outline: 2px dashed currentcoolor;
+--outline-offset: 2px;
+}
+
+*
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.page {
+
+}
+.page__body {
+  min-width: 390px;
+  font-family: var(--font-family);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding: 0 10px;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.btn-reset {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
 /* .wrapper {
   min-height: 100%;
   display: flex;
@@ -162,10 +206,10 @@ body {
   outline: 2px dashed var(--dark-primary);
   outline-offset: var(--outline-offset);
 }
-/* .btn:active {
+.btn:active {
   background-color: var(--dark-primary);
   color: var(--light-grey);
-} */
+}
 
 @media(any-hover: hover) {
   .btn:hover {
